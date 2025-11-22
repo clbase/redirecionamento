@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento - Vivendo de Sure</title>
+    
+    <link rel="icon" type="image/png" href="fav.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animação suave de entrada */
+        @keyframes fade-up {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        
+        /* Fundo animado sutil */
+        .bg-gradient-animated {
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 25%, #111111 50%, #0f0f0f 75%, #000000 100%);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+    
+    <meta http-equiv="refresh" content="5;url=https://vivendodesure.com/">
+</head>
+<body class="bg-gradient-animated min-h-screen flex items-center justify-center p-4 text-white font-sans">
+
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-900/20 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/20 rounded-full blur-[100px]"></div>
+    </div>
+
+    <div class="max-w-lg w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 sm:p-12 shadow-2xl text-center relative z-10 animate-fade-up">
+        
+        <div class="mb-8 flex justify-center">
+             <img 
+                src="1logo.png" 
+                alt="Logo Vivendo de Sure" 
+                class="h-24 w-auto drop-shadow-2xl transform hover:scale-105 transition-transform duration-300"
+             />
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-[#7200C9]">
+            Evoluímos!
+        </h1>
+
+        <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+            Para facilitar a sua vida, unificamos a <strong>Planilha</strong> e a <strong>Calculadora</strong> numa única plataforma.
+        </p>
+
+        <div class="bg-white/5 rounded-lg p-4 mb-8 border border-white/5">
+            <p class="text-sm text-gray-400 mb-2">Acesse agora a tudo num só lugar:</p>
+            <p class="text-xl font-mono text-blue-300">vivendodesure.com</p>
+        </div>
+
+        <a href="https://vivendodesure.com/" class="group relative inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 font-bold text-white transition-all duration-200 bg-gradient-to-r from-[#7200C9] to-blue-600 rounded-xl hover:from-[#8b5cf6] hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7200C9] focus:ring-offset-gray-900">
+            <span class="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-black rounded-xl group-hover:mt-0 group-hover:ml-0"></span>
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-[#7200C9] to-blue-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
+            <span class="relative flex items-center gap-2">
+                Acessar Nova Plataforma
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </span>
+        </a>
+
+        <p class="mt-6 text-sm text-gray-500">
+            Serás redirecionado automaticamente em 5 segundos...
+        </p>
+    </div>
+
+</body>
+</html>
